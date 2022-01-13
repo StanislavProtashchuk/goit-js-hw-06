@@ -12,6 +12,7 @@ const titleOfIngredients = document.querySelector('#ingredients');
 const listOfIngredients = ingredients.forEach(element => {
   const ingredient = document.createElement('li');
   ingredient.textContent = element;
+  ingredient.classList.add('item');
 
   titleOfIngredients.append(ingredient);
 })
